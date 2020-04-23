@@ -4,24 +4,41 @@
 ### - brew
 ### - node
 
-# brew cask install virtualbox
-# brew cask install vagrant
+## for android (docker) setting
+brew cask install virtualbox
+brew cask install vagrant
+vagrant up
 
-# brew install carthage
-# brew install cmake
+## appium for ios setting
 
-# brew install --HEAD libimobiledevice
-# brew install ios-deploy
-# brew install ios-webkit-debug-proxy
-# brew install ffmpeg
+npm i
 
-## TODO
-## brew install mjpeg-consumer
-## brew install set-simulator-location
-## brew install idb
-## brew install applesimutils
+# chartage
+brew install carthage
 
+# opencv4nodejs
+brew install cmake
 npm install -g opencv4nodejs
 
-# npm i
+# ffmpeg
+sudo mkdir /usr/local/Frameworks
+sudo chown $(whoami):admin /usr/local/Frameworks
+brew install ffmpeg
+
+# mjpeg-consumer
+npm install -g mjpeg-consumer
+
+# applesimutils
+brew tap wix/brew
+brew install applesimutils
+
+# idb idb-companion
+tap facebook/fb
+install idb-companion
+install fb-idb
+
+brew install --HEAD libimobiledevice
+brew install ios-deploy
+brew install ios-webkit-debug-proxy
+
 npx appium-doctor --ios
