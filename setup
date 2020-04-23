@@ -1,0 +1,27 @@
+#!/bin/bash -ex
+
+## requirements
+### - brew
+### - node
+
+# brew cask install virtualbox
+# brew cask install vagrant
+
+# brew install carthage
+# brew install cmake
+
+# brew install --HEAD libimobiledevice
+# brew install ios-deploy
+# brew install ios-webkit-debug-proxy
+# brew install ffmpeg
+
+## TODO
+## brew install mjpeg-consumer
+## brew install set-simulator-location
+## brew install idb
+## brew install applesimutils
+
+npm install -g opencv4nodejs
+
+# npm i
+npx appium-doctor --ios
